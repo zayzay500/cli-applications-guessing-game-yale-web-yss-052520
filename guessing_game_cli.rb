@@ -8,6 +8,6 @@ def run_guessing_game
   when "exit"
     puts "Goodbye!"
   else
-    puts "Sorry! The computer guessed #{num.chomp}"
+    puts "Sorry! The computer guessed #{num.to_s.chomp}"
   end
 end
