@@ -1,6 +1,6 @@
 # Code your solution here!
 def run_guessing_game
-  num = 1 + rand(6)
+  num = (1 + rand(6)).to_s.chomp
   input = gets.chomp
   case input
   when num
@@ -8,6 +8,6 @@ def run_guessing_game
   when "exit"
     puts "Goodbye!"
   else
-    puts "Sorry! The computer guessed #{num.to_s.chomp}."
+    puts "Sorry! The computer guessed #{num}."
   end
 end
